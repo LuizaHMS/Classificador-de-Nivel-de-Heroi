@@ -20,16 +20,16 @@ Ao final deve se exibir uma mensagem:
 //2 ok - 1 função para os dois, saida na main
 //3 ok- função para tudo
 
-victory = 101;
-defeat = 0;
+let vic = 101;
+let def = 0;
 
-balance = winningBalance(victory,defeat);
-rank = defineRank(balance);
+let bal = winningBalance(vic,def);
+let rankFinal = defineRank(bal);
 
-console.log("O Herói tem de saldo de " + balance + " e está no nível de " + rank + ".");
+console.log("O Herói tem de saldo de " + bal + " e está no nível de " + rankFinal + ".");
 
 function winningBalance (victory, defeat){
-    balance = victory - defeat;
+    let balance = victory - defeat;
     return balance;
 }
 

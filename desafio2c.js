@@ -1,12 +1,12 @@
-victory = 101;
-defeat = 0;
+let vic = 101;
+let def = 0;
 
-balance = winningBalance(victory,defeat);
-rank = defineRank(balance);
-exit(balance,rank);
+let bal = winningBalance(vic,def);
+let rankFinal = defineRank(bal);
+exit(bal,rankFinal);
 
 function winningBalance (victory, defeat){
-    balance = victory - defeat;
+    let balance = victory - defeat;
     return balance;
 }
 

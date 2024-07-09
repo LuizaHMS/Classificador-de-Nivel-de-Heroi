@@ -1,13 +1,13 @@
-victory = 101;
-defeat = 0;
+let vic = 101;
+let def = 0;
 
-balance = victory - defeat;
-rank = defineRank(victory,defeat);
+let bal = vic - def;
+let rankFinal = defineRank(vic,def);
 
-console.log("O Herói tem de saldo de " + balance + " e está no nível de " + rank + ".");
+console.log("O Herói tem de saldo de " + bal + " e está no nível de " + rankFinal + ".");
 
 function defineRank (victory, defeat){
-    balance = victory - defeat;
+    let balance = victory - defeat;
 
     if (balance <= 10){
         rank = "Ferro";
